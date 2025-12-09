@@ -1,0 +1,496 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root {
+    --pink_1: #F90988; 
+    --pink_2: #F9C7E4; 
+    --pink_3: #F6C6E0;
+    --blue_1: #F1F8FF;
+    --blue_2: #C9DAEA;
+	--white: #FFFFFF;
+	--black: #000000;
+}
+
+body {
+	background: var(--white); 
+    margin: 0;
+	background-image:url('../links/main.png');
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+h1 { 
+    color: var(--pink_1); 
+    font-family: "Gilroy", sans-serif;
+    font-size: 11.46vw; /*220px */
+	text-transform: lowercase;
+	line-height: 1.2;
+	margin: 0;
+	font-weight: 200;
+}
+
+h2 { 
+    font-family: "Gilroy", sans-serif;
+    font-size: 4.17vw; /*80px */
+    text-transform: lowercase;
+	font-weight: 200;
+}
+
+h3 { 
+    font-family: "Gilroy", sans-serif; 
+    font-size: 1.82vw; /*35px */
+	font-weight: 200;
+	border: 0.2px solid var(--black);
+    border-radius: 40px;
+    padding: 15px 30px;
+    display: inline-block;
+	white-space: nowrap; /* Запретить перенос строк */
+}
+
+p { 
+    font-family: "Tilda Sans", sans-serif;
+    font-size: 1.25vw; /*24px */
+    font-weight: lighter;
+}
+
+a { 
+    font-family: "Tilda Sans", sans-serif;
+    font-size: 1.25vw; /*24px */
+    font-weight: lighter;
+	color: var(--black);
+	text-decoration: none;
+	position: relative;
+	cursor: pointer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.04vw; /*20px */
+    padding: 0 11.20vw; /*215px */
+}
+
+.header {
+	height: 4.17vw; /*80px */
+    margin-bottom: 0.94vw; /*18px */
+    margin-top: 1.30vw; /*25px */
+    padding: 0 1.04vw; /*20px */
+}
+
+.logo img {
+	grid-column: 1;
+	max-width: 100%; 
+	width: 5.47vw; /*105px */ 
+    height: auto; 
+	position: relative;
+}
+
+
+.nav {
+    grid-column: 5 / 13;
+    display: contents;
+    justify-content: flex-end; /*к правому краю */
+}
+
+.button-1 { grid-column: 5; }
+.button-2 { grid-column: 6; }
+.button-3 { grid-column: 7; }
+.button-4 { grid-column: 8; }
+.button-5 { grid-column: 9; }
+.button-6 { grid-column: 10; }
+.button-7 { grid-column: 11; }
+.button-8 { grid-column: 12; }
+
+.main {
+	margin-top: 6.25vw; /*120px */
+    height: 28.13vw; /*540px */
+    display: flex;
+    align-items: center;
+}
+
+.intro {
+    grid-column: 1 / 4;
+    padding: 20px;
+	white-space: nowrap;
+}
+
+.intro h1 {
+    margin-top: -1.04vw; /*20px*/
+}
+
+.photo {
+	grid-column: 9 / 13; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+	height: 28.13vw; /*540px */
+	width: 26.46vw; /*483px */
+}
+
+.photo img {
+	max-width: 100%; 
+	width: 26.46vw; 
+    height: auto; 
+	position: relative;
+}
+
+.skills {
+    padding: 2.08vw 0; /*40px */
+    text-align: center; 
+}
+
+.skills-title {
+	margin-top: 6.25vw; /*120px */
+    margin-bottom: 6.25vw; /*120px */
+}
+
+.skills-experience {
+    margin-bottom: 6.25vw; /*120px */
+	margin: 0 auto 5.21vw; /*100px*/
+}
+
+.skills-experience img {
+    max-width: 100%;
+	width: 38.28vw; /*735px */
+    height: auto; 
+    margin-bottom: 1.04vw; /*20px */
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    gap: 5.21vw; /*100px*/
+	padding: 0 11.20vw; /*215px */
+}
+
+.skill-item {
+    height: 3.13vw; /* 60px */
+    width: 12.03vw; /* 231px */
+    display: flex; /* Для центрирования изображения */
+    justify-content: center; /* Центрируем содержимое */
+    align-items: center; /* Центрируем по вертикали */
+}
+
+.skill-item img {
+    max-width: 100%; 
+    width: 12.03vw; /* 231px */
+    height: auto; 
+    position: relative;
+}
+
+.skill-1 {
+    grid-column: 3 / 5; 
+	height: 3.13vw; /*60px */
+	width: 12.03vw; /*231px */
+}
+
+.skill-2 {
+    grid-column: 6 / 8;
+	height: 3.13vw; /*60px */
+	width: 12.03vw; /*231px */
+}
+
+.skill-3 {
+    grid-column: 9 / 11; 
+	height: 3.13vw; /*60px */
+	width: 12.03vw; /*231px */
+}
+
+.skill-4 {
+    grid-column: 3 / 5; 
+	height: 3.13vw; /*60px */
+	width: 12.03vw; /*231px */
+}
+
+.skill-5 {
+    grid-column: 6 / 8; 
+	height: 3.13vw; /*60px */
+	width: 12.03vw; /*231px */
+}
+
+.skill-6 {
+    grid-column: 9 / 11; 
+	height: 3.13vw; /*60px */
+	width: 12.03vw; /*231px */
+}
+
+.experience {
+    padding: 2.08vw 0; /*40px */
+    text-align: center; 
+}
+
+.experience-title {
+	margin-top: 6.25vw; /*120px */
+    margin-bottom: 6.25vw; /*120px */
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    gap: 1.04vw; /*20px */
+	padding: 0 11.20vw; /*215px */
+}
+
+.experience-image-1 {
+    grid-column: 2 / 6;
+	height: 16.67vw; /*320px */
+	width: 25.21vw; /*484px */
+}
+
+.experience-image-2 {
+    grid-column: 8 / 12; 
+	height: 16.67vw; /*320px */
+	width: 25.21vw; /*484px */
+}
+
+.experience-image img {
+    max-width: 100%;
+	width: 25.21vw; /*484px */
+    height: auto;
+}
+
+
+.footer {
+    margin-top: 10.42vw; /* 200px */
+    padding: 3.13vw 0; /* 60px */
+    background-color: var(--blue_1);
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.04vw; /* 20px */
+    padding: 0 11.20vw; /* 215px */
+	align-items: center;
+}
+
+.footer-logo {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5.99vw; /* 115px */
+}
+
+.footer-logo img {
+    width: 5.47vw; /* 105px */
+    height: auto;
+}
+
+.footer-logo p {
+    margin-top: 1.82vw; /* 35px */
+    font-family: "Tilda Sans", sans-serif;
+    font-size: 1.25vw; /* 24px */
+    font-weight: lighter;
+	margin-bottom: 3.65vw; /* 70px */
+}
+
+/* Контакты в футере */
+.footer-contacts {
+    grid-column: 10 / 13;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.contact-item img {
+    width: 1.82vw; /* 35px */
+    height: auto;
+    margin-right: 1.30vw; /* 25px */
+}
+
+.contact-item p {
+    font-family: "Tilda Sans", sans-serif;
+    font-size: 1.25vw; /* 24px */
+    font-weight: lighter;
+}
+
+/* Стили для pages.html */
+.page-background {
+    background: var(--white); 
+    margin: 0;
+    background-image: url('../links/case.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-content {
+    margin-top: 6.25vw; /* 120px */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.04vw; /* 20px */
+    padding: 0 11.20vw; /* 215px */
+    align-items: stretch;
+}
+
+/* Анимация */
+.animation-frame {
+    grid-column: 1 / 7;
+    height: 26.04vw; /* 500px */
+    width: 39.06vw; /* 750px */
+    border: none;
+}
+
+.animation-frame img {
+	max-width: 100%; 
+	width: 39.06vw; /* 750px */ 
+    height: auto; ;
+}
+
+/* Контейнер текста справа от анимации */
+.text-content {
+    grid-column: 8 / 13;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 2vw;
+}
+
+.text-content h2 {
+    margin: 0;
+}
+
+.text-content p {
+    margin-top: 1vw; 
+}
+
+/* Впечатление от работы */
+.impression-title {
+    grid-column: 1 / 5;
+    margin-top: 10.42vw; /* 200px */
+}
+
+.impression-text {
+    grid-column: 1 / 13;
+    margin-top: 1vw; 
+}
+
+
+/* Медиазапрос для экранов с шириной от 771px до 990px (планшеты и небольшие ноутбуки) */
+@media screen and (max-width: 990px) and (min-width: 771px) {
+    
+    .container {
+        grid-template-columns: repeat(6, 1fr);
+        padding: 0 5vw;
+    }
+
+    /* В главном блоке меняем флекс-направление на колонку, чтобы контент располагался вертикально */
+    .main {
+        flex-direction: column; /* Элементы внутри main будут расположены вертикально */
+        align-items: center
+        height: auto
+        margin-top: 8vw;
+    }
+
+    .intro, .photo {
+        grid-column: 1 / 7;
+        text-align: center;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 3vw;
+    }
+
+    .experience-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .footer .container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+
+    .footer-logo, .footer-contacts {
+        grid-column: 1 / 7;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 990px) and (min-width: 771px) {
+    .container {
+        grid-template-columns: repeat(6, 1fr);
+        padding: 0 5vw;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 8vw;
+    }
+
+    .intro, .photo {
+        grid-column: 1 / 7;
+        text-align: center;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3vw;
+    }
+
+    .experience-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .footer .container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .footer-logo, .footer-contacts {
+        grid-column: 1 / 7;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 4vw;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10vw;
+        height: auto;
+    }
+
+    .intro, .photo {
+        grid-column: 1 / 5;
+        text-align: center;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4vw;
+    }
+
+    .experience-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-logo, .footer-contacts {
+        grid-column: 1 / 5;
+        text-align: center;
+        align-items: center;
+    }
+}
